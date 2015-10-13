@@ -10,13 +10,13 @@ alias ddu='sh ~/Dropbox/Development/Themes\ WordPress/dobsondev-underscores/ddun
 alias caen='ssh junlonga@login-course.engin.umich.edu'
 push(){
     git add *
-    git add .*
+    git add .
     git commit -m "update all"
     git push origin master
 }
 commit(){
     git add *
-    git add .*
+    git add .
     git commit -m "update all"
 }
 
