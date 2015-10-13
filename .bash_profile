@@ -8,6 +8,15 @@ alias ls='ls -GFh'
 alias ll='ls -l'
 alias ddu='sh ~/Dropbox/Development/Themes\ WordPress/dobsondev-underscores/ddunderscores-osx.sh'
 alias caen='ssh junlonga@login-course.engin.umich.edu'
+push(){
+    git add *
+    git commit -m "update all"
+    git push origin master
+}
+commit(){
+    git add *
+    git commit -m "update all"
+}
 
 function prompt {
   local BLACK="\[\033[0;30m\]"
@@ -38,3 +47,5 @@ prompt
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
 export PATH
+export PATH=/Developer/NVIDIA/CUDA-7.0/bin:$PATH
+export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-7.0/lib:$DYLD_LIBRARY_PATH
