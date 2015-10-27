@@ -11,15 +11,19 @@ alias caen='ssh junlonga@login-course.engin.umich.edu'
 push(){
     git add *
     git add .
-    git commit -m "update all"
-    git push origin master
+    git commit -m "$1"
+    git push origin $2
 }
 commit(){
-    git add *
+    git add *.h *.cpp
     git add .
-    git commit -m "update all"
+    git add Makefile
+    git commit -m "$1"
 }
 
+function compile {
+    g++ -o $1 $2 -O3 -std=c++11
+}
 function prompt {
   local BLACK="\[\033[0;30m\]"
   local BLACKBOLD="\[\033[1;30m\]"
