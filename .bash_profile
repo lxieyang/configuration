@@ -8,6 +8,8 @@ alias ls='ls -GFh'
 alias ll='ls -l'
 alias ddu='sh ~/Dropbox/Development/Themes\ WordPress/dobsondev-underscores/ddunderscores-osx.sh'
 alias caen='ssh junlonga@login-course.engin.umich.edu'
+alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
+alias update_bash='cd ~/configuration/'
 push(){
     git add *
     git add .
