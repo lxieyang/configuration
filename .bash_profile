@@ -22,6 +22,9 @@ commit(){
     git add Makefile
     git commit -m "$1"
 }
+discard(){
+    git reset head --hard
+}
 
 function compile {
     g++ -o $1 $2 -O3 -std=c++11
