@@ -6,6 +6,7 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 alias ls='ls -GFh'
 alias ll='ls -l'
+alias lh='ls -ld .?*'
 alias ddu='sh ~/Dropbox/Development/Themes\ WordPress/dobsondev-underscores/ddunderscores-osx.sh'
 alias caen='ssh junlonga@login-course.engin.umich.edu'
 alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
