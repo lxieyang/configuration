@@ -3,6 +3,7 @@
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export PATH=/usr/local/bin:$PATH
+export PATH=~/utilities:$PATH
 alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 alias ls='ls -GFh'
 alias ll='ls -l'
