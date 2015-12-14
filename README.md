@@ -2,35 +2,37 @@
 
 2.install brew by:
 
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  $ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 3.install vim CMake via brew by:
-  brew update
+  $brew update
 
-  brew install CMake
+  $brew install CMake
 
-  brew install vim
+  $brew install vim
 
-4.clone this repository to ~ and cd into configuration, then run ./restore
+4.clone this repository to ~ and cd into configuration, then run 
+  $cd ~/configuration
+  $./restore
 
 5.reopen the terminal, and 
-git clone https://github.com/junlong-gao/vimrc.git
+  $git clone https://github.com/junlong-gao/vimrc.git
 
-sh ~/.vim_runtime/install_awesome_vimrc.sh
+  $sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 6.then the plugin:
 
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  $git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 Launch vim and run :PluginInstall
 
 7.then goto ycm to rebuild compiler:
 
-cd ~/.vim/bundle/YouCompleteMe
+  $cd ~/.vim/bundle/YouCompleteMe
 
 (if asked git submodule clone, just do it : )
 
-./install.py --clang-completer
+  $./install.py --clang-completer
 
 
 that's it!!
