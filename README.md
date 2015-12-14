@@ -11,14 +11,15 @@
 
   $brew install vim
 
-4.clone this repository to ~ and cd into configuration, then run 
-  $cd ~/configuration
-  $./restore
-
-5.reopen the terminal, and 
+4.reopen the terminal, and 
   $git clone https://github.com/junlong-gao/vimrc.git ~/.vim_runtime
 
   $sh ~/.vim_runtime/install_awesome_vimrc.sh
+  
+5.clone this repository to ~ and cd into configuration, then run 
+  $cd ~/configuration
+  $./restore
+
 
 6.then the plugin:
 
