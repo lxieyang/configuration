@@ -16,7 +16,7 @@
   $./restore
 
 5.reopen the terminal, and 
-  $git clone https://github.com/junlong-gao/vimrc.git
+  $git clone https://github.com/junlong-gao/vimrc.git ~/.vim_runtime
 
   $sh ~/.vim_runtime/install_awesome_vimrc.sh
 
@@ -36,4 +36,3 @@ Launch vim and run :PluginInstall
 
 
 that's it!!
-
