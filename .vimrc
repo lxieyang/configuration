@@ -27,6 +27,7 @@ let g:cpp_experimental_template_highlight = 1
  Plugin 'Raimondi/delimitMate'
  Plugin 'octol/vim-cpp-enhanced-highlight'
  Plugin 'flazz/vim-colorschemes'
+ Plugin 'pangloss/vim-javascript'
 
 
  " The following are examples of different formats supported.
@@ -61,5 +62,10 @@ let g:cpp_experimental_template_highlight = 1
 " " Put your non-Plugin stuff after this line
 let g:ycm_confirm_extra_conf=0
 
+
+" delimate
+ let delimitMate_expand_cr=1
+ let delimitMate_matchpairs=1
+ let delimitMate_quotes=1
 
 set number
