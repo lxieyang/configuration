@@ -38,8 +38,10 @@ Launch vim and run :PluginInstall
 (if asked git submodule clone, just do it : )
 
   $./install.py --clang-completer
+  
+  
 
-8. For python support:
+8.For python support:
 
   $git clone https://github.com/klen/python-mode.git
   
