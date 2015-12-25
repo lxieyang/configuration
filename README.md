@@ -48,5 +48,7 @@ Launch vim and run :PluginInstall
   $ cd python-mode
   
   $ cp -R * ~/.vim
+
+9.Finally, launch vim and run :PluginInstall
   
 that's it!!
