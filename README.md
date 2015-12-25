@@ -39,5 +39,12 @@ Launch vim and run :PluginInstall
 
   $./install.py --clang-completer
 
+8. For python support:
 
+  $git clone https://github.com/klen/python-mode.git
+  
+  $ cd python-mode
+  
+  $ cp -R * ~/.vim
+  
 that's it!!
