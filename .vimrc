@@ -38,6 +38,7 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Bundle "gilligan/vim-lldb"
+Bundle 'fholgado/minibufexpl.vim'
 
 
 
@@ -126,4 +127,6 @@ let g:lldb_map_Lbreakpoint = "<leader>b"
 let g:lldb_map_Lcontinue = "<leader>c"
 let g:lldb_map_Lprint = "<leader>p"
 
-let g:ycm_goto_buffer_command = 'new-tab'
+"buffer:
+set switchbuf=usetab,newtab
+
