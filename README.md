@@ -1,3 +1,13 @@
+To Update:
+
+  1. cd into configuration and git pull
+  
+  2. $./restore
+  
+  3. launch vim and :PluginInstall
+
+Raw install:
+
 1.install xcode
 
 2.install brew by:
@@ -52,3 +62,5 @@ Launch vim and run :PluginInstall
 9.Finally, launch vim and run :PluginInstall
   
 that's it!!
+
+
