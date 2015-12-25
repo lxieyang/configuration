@@ -95,7 +95,7 @@ set foldlevel=99
 set encoding=utf-8
 set clipboard=unnamed
 
-let mapleader = "\<Space>"
+let mapleader = ","
 call togglebg#map("<F5>")
 
 
