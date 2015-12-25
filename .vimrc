@@ -125,3 +125,5 @@ let g:lldb_map_Lnext = "<leader>n"
 let g:lldb_map_Lbreakpoint = "<leader>b"
 let g:lldb_map_Lcontinue = "<leader>c"
 let g:lldb_map_Lprint = "<leader>p"
+
+let g:ycm_goto_buffer_command = 'new-tab'
