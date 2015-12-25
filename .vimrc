@@ -37,7 +37,6 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
-Bundle "gilligan/vim-lldb"
 Bundle 'fholgado/minibufexpl.vim'
 
 
@@ -78,6 +77,7 @@ Bundle 'fholgado/minibufexpl.vim'
 " " see :h vundle for more details or wiki for FAQ
 " " Put your non-Plugin stuff after this line
 let g:ycm_confirm_extra_conf=0
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 
 
 set number
@@ -121,11 +121,6 @@ if 'VIRTUAL_ENV' in os.environ:
     execfile(activate_this, dict(__file__=activate_this))
 EOF
 
-"lldb:
-let g:lldb_map_Lnext = "<leader>n"
-let g:lldb_map_Lbreakpoint = "<leader>b"
-let g:lldb_map_Lcontinue = "<leader>c"
-let g:lldb_map_Lprint = "<leader>p"
 
 "buffer:
 set switchbuf=usetab,newtab
