@@ -37,6 +37,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
+Bundle "gilligan/vim-lldb"
 
 
 
@@ -101,8 +102,6 @@ call togglebg#map("<F5>")
 if has('gui_running')
     set background=dark
     colorscheme solarized
-else
-      colorscheme zenburn
 endif
 
 
@@ -121,4 +120,8 @@ if 'VIRTUAL_ENV' in os.environ:
     execfile(activate_this, dict(__file__=activate_this))
 EOF
 
-
+"lldb:
+let g:lldb_map_Lnext = "<leader>n"
+let g:lldb_map_Lbreakpoint = "<leader>b"
+let g:lldb_map_Lcontinue = "<leader>c"
+let g:lldb_map_Lprint = "<leader>p"
