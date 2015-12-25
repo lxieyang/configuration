@@ -1,10 +1,20 @@
-1.install xcode
+To Update:
 
-2.install brew by:
+  1. cd into configuration and git pull
+  
+  2. $./restore
+  
+  3. launch vim and :PluginInstall
+
+Raw install:
+
+  1. Install xcode
+
+  2. Install brew by:
 
   $ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-3.install vim CMake via brew by:
+  3. Install vim CMake via brew by:
 
   $brew update
 
@@ -12,26 +22,26 @@
 
   $brew install vim
 
-4.reopen the terminal, and 
+  4. Reopen the terminal, and 
 
   $git clone https://github.com/junlong-gao/vimrc.git ~/.vim_runtime
 
   $sh ~/.vim_runtime/install_awesome_vimrc.sh
   
-5.clone this repository to ~ and cd into configuration, then run 
+  5. Clone this repository to ~ and cd into configuration, then run 
 
   $cd ~/configuration
   
   $./restore
 
 
-6.then the plugin:
+  6. Then the plugin:
 
   $git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-Launch vim and run :PluginInstall
+    Launch vim and run :PluginInstall
 
-7.then goto ycm to rebuild compiler:
+  7. Then goto ycm to rebuild compiler:
 
   $cd ~/.vim/bundle/YouCompleteMe
 
@@ -41,7 +51,7 @@ Launch vim and run :PluginInstall
   
   
 
-8.For python support:
+  8. For python support:
 
   $git clone https://github.com/klen/python-mode.git
   
@@ -49,6 +59,8 @@ Launch vim and run :PluginInstall
   
   $ cp -R * ~/.vim
 
-9.Finally, launch vim and run :PluginInstall
+  9. Finally, launch vim and run :PluginInstall
   
 that's it!!
+
+
