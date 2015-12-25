@@ -5,6 +5,7 @@
   $ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 3.install vim CMake via brew by:
+
   $brew update
 
   $brew install CMake
@@ -12,12 +13,15 @@
   $brew install vim
 
 4.reopen the terminal, and 
+
   $git clone https://github.com/junlong-gao/vimrc.git ~/.vim_runtime
 
   $sh ~/.vim_runtime/install_awesome_vimrc.sh
   
 5.clone this repository to ~ and cd into configuration, then run 
+
   $cd ~/configuration
+  
   $./restore
 
 
