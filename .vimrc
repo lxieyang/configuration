@@ -22,13 +22,27 @@ let g:cpp_experimental_template_highlight = 1
  "call vundle#begin('~/some/path/here')
 
  " let Vundle manage Vundle, required
- Plugin 'VundleVim/Vundle.vim'
- Bundle 'Valloric/YouCompleteMe'
- Plugin 'Raimondi/delimitMate'
- Plugin 'octol/vim-cpp-enhanced-highlight'
- Plugin 'flazz/vim-colorschemes'
- Plugin 'pangloss/vim-javascript'
- let delimitMate_expand_cr=1
+Plugin 'VundleVim/Vundle.vim'
+Bundle 'Valloric/YouCompleteMe'
+Plugin 'Raimondi/delimitMate'
+Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'pangloss/vim-javascript'
+Plugin 'tmhedberg/SimpylFold'
+Plugin 'vim-scripts/indentpython.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'nvie/vim-flake8'
+Plugin 'jnurmine/Zenburn'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-fugitive'
+
+
+
+
+
+
 
 
  " The following are examples of different formats supported.
@@ -65,3 +79,46 @@ let g:ycm_confirm_extra_conf=0
 
 
 set number
+syntax on
+let delimitMate_expand_cr=1
+let g:SimpylFold_docstring_preview=1
+set splitbelow
+let python_highlight_all=1
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+nnoremap <space> za
+set foldmethod=indent
+set foldlevel=99
+set encoding=utf-8
+set clipboard=unnamed
+
+let mapleader = "\<Space>"
+call togglebg#map("<F5>")
+
+
+if has('gui_running')
+    set background=dark
+    colorscheme solarized
+else
+      colorscheme zenburn
+endif
+
+
+"python:
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+
+"python with virtualenv support
+py << EOF
+import os
+import sys
+if 'VIRTUAL_ENV' in os.environ:
+    project_base_dir = os.environ['VIRTUAL_ENV']
+    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+    execfile(activate_this, dict(__file__=activate_this))
+EOF
+
+

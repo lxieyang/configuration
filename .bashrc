@@ -10,6 +10,7 @@ alias ll='ls -l'
 alias lh='ls -ld .?*'
 alias ddu='sh ~/Dropbox/Development/Themes\ WordPress/dobsondev-underscores/ddunderscores-osx.sh'
 alias caen='ssh junlonga@login-course.engin.umich.edu'
+alias cloud='ssh root@104.131.67.203'
 alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
 alias update_bash='cd ~/configuration/'
 push(){
@@ -29,7 +30,11 @@ discard(){
 }
 
 function compile {
-    g++ -o $1 $2 -O3 -std=c++11
+    g++  main.cpp -o out -g -std=c++11
+}
+
+function debug {
+    g++  main.cpp -o out -g -std=c++11 -D DEBUG
 }
 function prompt {
   local BLACK="\[\033[0;30m\]"
