@@ -14,7 +14,7 @@ alias cloud='ssh root@104.131.67.203'
 alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
 alias update_bash='cd ~/configuration/'
 push(){
-    git add *
+    git add --all
     git add .
     git commit -m "$1"
     git push origin $2
@@ -25,16 +25,21 @@ commit(){
     git add Makefile
     git commit -m "$1"
 }
+
 discard(){
     git reset head --hard
 }
 
+remove(){
+    git rm --cached "$1"
+}
+
 function compile {
-    g++  main.cpp -o out -g -std=c++11
+    g++  main.cpp -o out -g -std=c++14
 }
 
 function debug {
-    g++  main.cpp -o out -g -std=c++11 -D DEBUG
+    g++  main.cpp -o out -g -std=c++14 -D DEBUG
 }
 function prompt {
   local BLACK="\[\033[0;30m\]"
