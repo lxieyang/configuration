@@ -37,6 +37,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdcommenter'
 Bundle "gilligan/vim-lldb"
 Bundle 'fholgado/minibufexpl.vim'
 
@@ -120,6 +121,8 @@ if 'VIRTUAL_ENV' in os.environ:
     activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
     execfile(activate_this, dict(__file__=activate_this))
 EOF
+let g:pymode_rope_completion = 0
+let g:pymode_rope_complete_on_dot = 0
 
 "lldb:
 let g:lldb_map_Lnext = "<leader>n"
