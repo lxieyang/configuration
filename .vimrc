@@ -94,6 +94,7 @@ nnoremap <C-H> <C-W><C-H>
 nnoremap <space> za
 map <F12> :NERDTreeToggle<Enter>
 map <F11> :NERDTree<Enter>R<C-H>
+map <F10> <Enter>:cd %:p:h
 set foldmethod=indent
 set foldlevel=99
 set encoding=utf-8
@@ -135,3 +136,6 @@ let g:lldb_map_Lprint = "<leader>p"
 "buffer:
 set switchbuf=usetab,newtab
 
+"NERDTree:
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
