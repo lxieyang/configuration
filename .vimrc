@@ -92,6 +92,8 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <space> za
+map <F12> :NERDTreeToggle<Enter>
+map <F11> :NERDTree<Enter>R<C-H>
 set foldmethod=indent
 set foldlevel=99
 set encoding=utf-8
