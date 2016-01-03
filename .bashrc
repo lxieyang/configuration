@@ -26,6 +26,7 @@ commit(){
     git commit -m "$1"
 }
 discard(){
+    git clean -f
     git reset head --hard
 }
 
