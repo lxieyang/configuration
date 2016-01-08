@@ -23,7 +23,6 @@ let g:cpp_experimental_template_highlight = 1
 
  " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Bundle 'Valloric/YouCompleteMe'
 Plugin 'Raimondi/delimitMate'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'flazz/vim-colorschemes'
@@ -38,7 +37,6 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdcommenter'
-Bundle "gilligan/vim-lldb"
 Bundle 'fholgado/minibufexpl.vim'
 
 

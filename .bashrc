@@ -4,14 +4,12 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export PATH=/usr/local/bin:$PATH
 export PATH=~/utilities:$PATH
-alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
+alias subl='/Applications/Sublime\ Text\.app/Contents/SharedSupport/bin/subl'
 alias ls='ls -GFh'
 alias ll='ls -l'
 alias lh='ls -ld .?*'
-alias ddu='sh ~/Dropbox/Development/Themes\ WordPress/dobsondev-underscores/ddunderscores-osx.sh'
 alias caen='ssh junlonga@login-course.engin.umich.edu'
 alias cloud='ssh root@104.131.67.203'
-alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
 alias update_bash='cd ~/configuration/'
 push(){
     git add *
