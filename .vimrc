@@ -23,6 +23,7 @@ let g:cpp_experimental_template_highlight = 1
 
  " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+Bundle 'Valloric/YouCompleteMe'
 Plugin 'Raimondi/delimitMate'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'flazz/vim-colorschemes'
