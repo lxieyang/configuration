@@ -11,6 +11,9 @@ alias lh='ls -ld .?*'
 alias caen='ssh junlonga@login-course.engin.umich.edu'
 alias cloud='ssh root@104.131.67.203'
 alias update_bash='cd ~/configuration/'
+clone(){
+    git clone https://jerry1394@bitbucket.org/jerry1394/$1.git
+}
 push(){
     git add *
     git add .
