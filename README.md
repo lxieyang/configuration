@@ -1,13 +1,15 @@
+<ol>
 To Update:
-1. cd into configuration and git pull
-2. $./restore
-3. launch vim and :PluginInstall
-
+<li> cd into configuration and git pull
+<li> $./restore
+<li> launch vim and :PluginInstall
+</ol>
+<ol>
 Raw install:
-1. clone the repo
-2. install Xcode
-3. run the init_mac
-
+<li> clone the repo
+<li> install Xcode
+<li> run the init_mac
+</ol>
   
 that's it!!
 
