@@ -1,3 +1,8 @@
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew update
+brew install CMake
+brew install vim
+brew install macvim
 git clone https://github.com/junlong-gao/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -5,3 +10,4 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --clang-completer
+cp extended.vim ~/.vim_runtime/vimrcs/extended.vim
