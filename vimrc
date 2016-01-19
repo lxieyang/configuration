@@ -78,6 +78,9 @@ Bundle 'fholgado/minibufexpl.vim'
 " " see :h vundle for more details or wiki for FAQ
 " " Put your non-Plugin stuff after this line
 let g:ycm_confirm_extra_conf=0
+let g:clang_user_options='||exit 0'
+let g:clang_debug=0
+"let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 
 
 set number
@@ -126,11 +129,6 @@ EOF
 let g:pymode_rope_completion = 0
 let g:pymode_rope_complete_on_dot = 0
 
-"lldb:
-let g:lldb_map_Lnext = "<leader>n"
-let g:lldb_map_Lbreakpoint = "<leader>b"
-let g:lldb_map_Lcontinue = "<leader>c"
-let g:lldb_map_Lprint = "<leader>p"
 
 "buffer:
 set switchbuf=usetab,newtab
