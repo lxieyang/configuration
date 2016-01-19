@@ -7,8 +7,7 @@ To Update:
 <ol>
 Raw install:
 <li> clone the repo
-<li> install Xcode
-<li> run the init_mac
+<li> run the init_linux
 </ol>
   
 that's it!!
