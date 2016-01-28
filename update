@@ -1,3 +1,3 @@
-cp ~/.bashrc ./.bashrc
-cp ~/.ycm_extra_conf.py ./.ycm_extra_conf.py
-cp ~/.vimrc .vimrc
+cp ~/.bashrc bashrc
+cp ~/.ycm_extra_conf.py ycm_extra_conf.py
+cp ~/.vimrc vimrc
