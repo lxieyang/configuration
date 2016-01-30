@@ -4,16 +4,21 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export PATH=/usr/local/bin:$PATH
 export PATH=~/utilities:$PATH
+export PATH=/usr/local/cuda-7.5/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-7.5/lib64:$LD_LIBRARY_PATH
 alias subl='/Applications/Sublime\ Text\.app/Contents/SharedSupport/bin/subl'
 alias ls='ls -GFh'
 alias ll='ls -l'
 alias lh='ls -ld .?*'
+alias clc='clear'
 alias cloud='ssh root@104.131.67.203'
+alias chrome='google-chrome --enable-webgl --ignore-gpu-blacklist'
+alias db='rlwrap sqlplus64 junlonga/54281394@forktail.dsc.umich.edu/COURSEDB'
 caen(){
     ssh $1@login-course.engin.umich.edu
 }
 clone(){
-    git clone https://jerry1394@bitbucket.org/jerry1394/$1.git
+    git clone git@bitbucket.org:jerry1394/$1.git
 }
 push(){
     git add *
@@ -75,3 +80,6 @@ export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-7.0/lib:$DYLD_LIBRARY_PATH
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
 export PATH
+
+# added by Anaconda2 2.4.1 installer
+export PATH="/home/junlong/anaconda2/bin:$PATH"
