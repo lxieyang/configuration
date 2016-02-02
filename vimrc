@@ -39,6 +39,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdcommenter'
 Bundle 'fholgado/minibufexpl.vim'
 Plugin 'vim-scripts/taglist.vim'
+Plugin 'pelodelfuego/vim-swoop'
 
 
 
@@ -112,6 +113,7 @@ endif
 "python:
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+map <leader>n :noh<Enter>
 
 
 "python with virtualenv support
@@ -126,11 +128,6 @@ EOF
 let g:pymode_rope_completion = 0
 let g:pymode_rope_complete_on_dot = 0
 
-"lldb:
-let g:lldb_map_Lnext = "<leader>n"
-let g:lldb_map_Lbreakpoint = "<leader>b"
-let g:lldb_map_Lcontinue = "<leader>c"
-let g:lldb_map_Lprint = "<leader>p"
 
 "buffer:
 set switchbuf=usetab,newtab

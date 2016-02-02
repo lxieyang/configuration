@@ -8,12 +8,11 @@ alias subl='/Applications/Sublime\ Text\.app/Contents/SharedSupport/bin/subl'
 alias ls='ls -GFh'
 alias ll='ls -l'
 alias lh='ls -ld .?*'
+alias caen='ssh junlonga@login-course.engin.umich.edu'
 alias cloud='ssh root@104.131.67.203'
-caen(){
-    ssh $1@login-course.engin.umich.edu
-}
+alias update_bash='cd ~/configuration/'
 clone(){
-    git clone https://jerry1394@bitbucket.org/jerry1394/$1.git
+    git clone git@bitbucket.org:jerry1394/$1.git
 }
 push(){
     git add *
@@ -75,3 +74,6 @@ export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-7.0/lib:$DYLD_LIBRARY_PATH
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
 export PATH
+
+# added by Anaconda2 2.4.1 installer
+export PATH="/home/junlonga/anaconda2/bin:$PATH"
