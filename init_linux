@@ -1,21 +1,3 @@
-cd
-wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-dark
-mv dircolors.ansi-dark .dircolors
-eval `dircolors ~/.dircolors`
-
-cd
-wget -check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-light
-mv dircolors.ansi-light .dircolors
-eval `dircolors ~/.dircolors`
-
-cd 
-sudo apt-get install git-core
-git clone https://github.com/sigurdga/gnome-terminal-colors-solarized.git
-cd gnome-terminal-colors-solarized
-./set_dark.sh
-
-
-
 git clone https://github.com/junlong-gao/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
