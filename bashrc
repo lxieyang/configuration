@@ -14,7 +14,6 @@ export ORACLE_HOME=/usr/lib/oracle/12.1/client64
 export PATH=/usr/lib/oracle/12.1/client64/bin:$PATH
 export PATH=/usr/lib/oracle/12.1/client64/lib:$PATH
 
-alias subl='/Applications/Sublime\ Text\.app/Contents/SharedSupport/bin/subl'
 alias ls='ls -GFh'
 alias ll='ls -l'
 alias lh='ls -ld .?*'
