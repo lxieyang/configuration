@@ -27,6 +27,9 @@ alias db='rlwrap sqlplus64 junlonga/54281394@forktail.dsc.umich.edu/COURSEDB'
 #caen(){
 #    ssh $1@login-course.engin.umich.edu
 #}
+pdf(){
+    evince $1
+}
 clone(){
     git clone git@bitbucket.org:jerry1394/$1.git
 }
