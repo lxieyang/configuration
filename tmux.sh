@@ -20,7 +20,7 @@ make
 
 
 sudo make install
-Go home:
+#Go home:
 
 cd ~
 

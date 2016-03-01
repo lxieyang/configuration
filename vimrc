@@ -29,7 +29,6 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'pangloss/vim-javascript'
 Plugin 'tmhedberg/SimpylFold'
-Plugin 'vim-scripts/indentpython.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'jnurmine/Zenburn'
@@ -132,6 +131,7 @@ let g:pymode_rope_complete_on_dot = 0
 
 "buffer:
 set switchbuf=usetab,newtab
+map ,bt :bufdo tab split<CR>
 
 "NERDTree:
 autocmd VimEnter * NERDTree
