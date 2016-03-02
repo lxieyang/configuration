@@ -23,6 +23,7 @@ let g:cpp_experimental_template_highlight = 1
 
  " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdcommenter.vim'
 Bundle 'Valloric/YouCompleteMe'
 Plugin 'Raimondi/delimitMate'
 Plugin 'octol/vim-cpp-enhanced-highlight'
@@ -134,5 +135,5 @@ let g:pymode_rope_complete_on_dot = 0
 set switchbuf=usetab,newtab
 
 "NERDTree:
-autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
+autocmd VimEnter * :TlistToggle
