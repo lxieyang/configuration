@@ -1,38 +1,16 @@
 # ~/.bashrc ]] && source ~/.bashrc
-export CUDA_HOME=/usr/local/cuda-7.5 
-export LD_LIBRARY_PATH=${CUDA_HOME}/lib64 
-PATH=${CUDA_HOME}/bin:${PATH} 
-export PATH 
+
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export PATH=/usr/local/bin:$PATH
 export PATH=~/utilities:$PATH
-export PATH=/usr/local/cuda-7.5/bin:$PATH
-export LD_LIBRARY_PATH=/usr/local/cuda-7.5/lib64:$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH=/usr/lib/oracle/12.1/client64/lib/${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}
-export ORACLE_HOME=/usr/lib/oracle/12.1/client64
-export PATH=/usr/lib/oracle/12.1/client64/bin:$PATH
-export PATH=/usr/lib/oracle/12.1/client64/lib:$PATH
-
+alias subl='/Applications/Sublime\ Text\.app/Contents/SharedSupport/bin/subl'
 alias ls='ls -GFh'
 alias ll='ls -l'
 alias lh='ls -ld .?*'
-alias clc='clear'
-alias ..='cd ..'
-alias edit='vim .'
+alias caen='ssh junlonga@login-course.engin.umich.edu'
 alias cloud='ssh root@104.131.67.203'
-alias chrome='google-chrome --enable-webgl --ignore-gpu-blacklist'
-alias db='rlwrap sqlplus64 junlonga/54281394@forktail.dsc.umich.edu/COURSEDB'
-
-#caen(){
-#    ssh $1@login-course.engin.umich.edu
-#}
-pdf(){
-    evince $1
-}
-clone(){
-    git clone git@bitbucket.org:jerry1394/$1.git
-}
+alias update_bash='cd ~/configuration/'
 push(){
     git add *
     git add .
@@ -93,8 +71,3 @@ export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-7.0/lib:$DYLD_LIBRARY_PATH
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
 export PATH
-
-# added by Anaconda2 2.4.1 installer
-export PATH="/home/junlong/anaconda2/bin:$PATH"
-
-tmux

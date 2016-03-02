@@ -23,6 +23,7 @@ let g:cpp_experimental_template_highlight = 1
 
  " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdcommenter.vim'
 Bundle 'Valloric/YouCompleteMe'
 Plugin 'Raimondi/delimitMate'
 Plugin 'octol/vim-cpp-enhanced-highlight'
@@ -93,6 +94,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <space> za
 map <F2> :NERDTreeToggle<Enter>
+map <F3> :TlistToggle<Enter>
 map <F11> :set spell spelllang=en_US<Enter>
 map <F12> <Enter>:cd %:p:h<Enter><F11>
 set foldmethod=indent
@@ -134,5 +136,7 @@ set switchbuf=usetab,newtab
 map ,bt :bufdo tab split<CR>
 
 "NERDTree:
-autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
+autocmd VimEnter * :TlistToggle
+autocmd BufWritePost *.cpp :TlistUpdate
+
