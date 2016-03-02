@@ -95,6 +95,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <space> za
 map <F2> :NERDTreeToggle<Enter>
+map <F3> :TlistToggle<Enter>
 map <F11> :set spell spelllang=en_US<Enter>
 map <F12> <Enter>:cd %:p:h<Enter><F11>
 set foldmethod=indent
@@ -137,3 +138,5 @@ set switchbuf=usetab,newtab
 "NERDTree:
 autocmd VimEnter * wincmd p
 autocmd VimEnter * :TlistToggle
+autocmd BufWritePost *.cpp :TlistUpdate
+
