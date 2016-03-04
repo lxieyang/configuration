@@ -147,7 +147,7 @@ nmap <F4> :SrcExplToggle<CR>
 let g:SrcExpl_winHeight = 5 
 
 " // Set 100 ms for refreshing the Source Explorer 
-let g:SrcExpl_refreshTime = 100 
+let g:SrcExpl_refreshTime = 10 
 
 " // Set "Enter" key to jump into the exact definition context 
 let g:SrcExpl_jumpKey = "<ENTER>" 
@@ -184,3 +184,4 @@ let g:SrcExpl_prevDefKey = "<F11>"
 " // Set "<F8>" key for displaying the next definition in the jump list 
 let g:SrcExpl_nextDefKey = "<F10>" 
 
+set linespace=8
