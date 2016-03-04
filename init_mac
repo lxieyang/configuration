@@ -3,7 +3,7 @@ brew update
 brew install CMake
 brew install vim
 brew install macvim
-git clone https://github.com/junlong-gao/vimrc.git ~/.vim_runtime
+git clone https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ./restore
