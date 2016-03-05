@@ -184,4 +184,5 @@ let g:SrcExpl_prevDefKey = "<F11>"
 " // Set "<F8>" key for displaying the next definition in the jump list 
 let g:SrcExpl_nextDefKey = "<F10>" 
 
+set guifont=Monospace
 set linespace=8
