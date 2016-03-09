@@ -22,6 +22,7 @@ let g:cpp_experimental_template_highlight = 1
  "call vundle#begin('~/some/path/here')
 
  " let Vundle manage Vundle, required
+Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'VundleVim/Vundle.vim'
 Bundle 'Valloric/YouCompleteMe'
 Plugin 'Raimondi/delimitMate'
@@ -186,3 +187,5 @@ let g:SrcExpl_nextDefKey = "<F10>"
 
 set guifont=Monospace
 set linespace=8
+set background=dark
+colorscheme PaperColor
