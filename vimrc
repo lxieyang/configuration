@@ -108,8 +108,9 @@ call togglebg#map("<F5>")
 
 
 if has('gui_running')
+    set guifont=monospace\ 12
     set background=dark
-    colorscheme solarized
+    "colorscheme solarized
 endif
 
 
@@ -185,7 +186,6 @@ let g:SrcExpl_prevDefKey = "<F11>"
 " // Set "<F8>" key for displaying the next definition in the jump list 
 let g:SrcExpl_nextDefKey = "<F10>" 
 
-set guifont=Monospace
-set linespace=8
+set linespace=6
 set background=dark
 colorscheme PaperColor
