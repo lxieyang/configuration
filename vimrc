@@ -24,23 +24,23 @@ let g:cpp_experimental_template_highlight = 1
  " let Vundle manage Vundle, required
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'VundleVim/Vundle.vim'
-Bundle 'Valloric/YouCompleteMe'
+"Bundle 'Valloric/YouCompleteMe'
 Plugin 'Raimondi/delimitMate'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'flazz/vim-colorschemes'
-Plugin 'pangloss/vim-javascript'
+"Plugin 'pangloss/vim-javascript'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'scrooloose/syntastic'
-Plugin 'nvie/vim-flake8'
-Plugin 'jnurmine/Zenburn'
+"Plugin 'nvie/vim-flake8'
+"Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'kien/ctrlp.vim'
-Plugin 'tpope/vim-fugitive'
+"Plugin 'kien/ctrlp.vim'
+"Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'vim-scripts/taglist.vim'
-Plugin 'pelodelfuego/vim-swoop'
-Plugin 'wesleyche/SrcExpl'
+"Plugin 'vim-scripts/taglist.vim'
+"Plugin 'pelodelfuego/vim-swoop'
+"Plugin 'wesleyche/SrcExpl'
 
 
 
@@ -87,16 +87,13 @@ syntax on
 let delimitMate_expand_cr=1
 let g:SimpylFold_docstring_preview=1
 set splitbelow
-let python_highlight_all=1
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <space> za
 map <F2> :NERDTreeToggle<Enter>
-map <F3> :TlistToggle<Enter>
 map <F11> :set spell spelllang=en_US<Enter>
-map <F12> <Enter>:cd %:p:h<Enter><F11>
 set foldmethod=indent
 set foldlevel=99
 set encoding=utf-8
@@ -119,73 +116,18 @@ map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 map <leader>n :noh<Enter>
 
 
-"python with virtualenv support
-py << EOF
-import os
-import sys
-if 'VIRTUAL_ENV' in os.environ:
-    project_base_dir = os.environ['VIRTUAL_ENV']
-    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-    execfile(activate_this, dict(__file__=activate_this))
-EOF
-let g:pymode_rope_completion = 0
-let g:pymode_rope_complete_on_dot = 0
 
 
 "buffer:
 set switchbuf=usetab,newtab
 map ,bt :bufdo tab split<CR>
 
-"NERDTree:
-autocmd VimEnter * wincmd p
-autocmd VimEnter * :TlistToggle
-autocmd BufWritePost *.cpp :TlistUpdate
+"autocmd VimEnter * wincmd p
+"autocmd VimEnter * :TlistToggle
+"autocmd BufWritePost *.cpp :TlistUpdate
 
-" // The switch of the Source Explorer 
-nmap <F4> :SrcExplToggle<CR> 
 
-" // Set the height of Source Explorer window 
-let g:SrcExpl_winHeight = 5 
-
-" // Set 100 ms for refreshing the Source Explorer 
-let g:SrcExpl_refreshTime = 10 
-
-" // Set "Enter" key to jump into the exact definition context 
-let g:SrcExpl_jumpKey = "<ENTER>" 
-
-" // Set "Space" key for back from the definition context 
-let g:SrcExpl_gobackKey = "<SPACE>" 
-
-" // In order to avoid conflicts, the Source Explorer should know what plugins
-" // except itself are using buffers. And you need add their buffer names into
-" // below listaccording to the command ":buffers!"
-let g:SrcExpl_pluginList = [ 
-        \ "__Tag_List__", 
-        \ "_NERD_tree_" 
-    \ ] 
-
-" // Enable/Disable the local definition searching, and note that this is not 
-" // guaranteed to work, the Source Explorer doesn't check the syntax for now. 
-" // It only searches for a match with the keyword according to command 'gd' 
-let g:SrcExpl_searchLocalDef = 1 
-
-" // Do not let the Source Explorer update the tags file when opening 
-let g:SrcExpl_isUpdateTags = 0 
-
-" // Use 'Exuberant Ctags' with '--sort=foldcase -R .' or '-L cscope.files' to 
-" // create/update the tags file 
-let g:SrcExpl_updateTagsCmd = "ctags --sort=foldcase -R ." 
-
-" // Set "<F10>" key for updating the tags file artificially 
-let g:SrcExpl_updateTagsKey = "<F12>" 
-
-" // Set "<F9>" key for displaying the previous definition in the jump list 
-let g:SrcExpl_prevDefKey = "<F11>" 
-
-" // Set "<F8>" key for displaying the next definition in the jump list 
-let g:SrcExpl_nextDefKey = "<F10>" 
-
-set guifont=Monospace
-set linespace=8
+set guifont=Consolas:h12
+set linespace=3
 set background=dark
 colorscheme PaperColor
