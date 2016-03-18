@@ -71,3 +71,6 @@ export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-7.0/lib:$DYLD_LIBRARY_PATH
 PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
 export PATH
 
+
+# added by Anaconda2 2.5.0 installer
+export PATH="/home/junlonga/anaconda2/bin:$PATH"

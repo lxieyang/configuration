@@ -22,16 +22,16 @@ let g:cpp_experimental_template_highlight = 1
  "call vundle#begin('~/some/path/here')
 
  " let Vundle manage Vundle, required
-Plugin 'NLKNguyen/papercolor-theme'
+"Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'VundleVim/Vundle.vim'
 Bundle 'Valloric/YouCompleteMe'
 Plugin 'Raimondi/delimitMate'
 Plugin 'octol/vim-cpp-enhanced-highlight'
-Plugin 'flazz/vim-colorschemes'
+"Plugin 'flazz/vim-colorschemes'
 Plugin 'pangloss/vim-javascript'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'scrooloose/syntastic'
-Plugin 'nvie/vim-flake8'
+"Plugin 'nvie/vim-flake8'
 Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'jistr/vim-nerdtree-tabs'
@@ -110,7 +110,7 @@ call togglebg#map("<F5>")
 if has('gui_running')
     set guifont=monospace\ 12
     set background=dark
-    "colorscheme solarized
+    colorscheme solarized
 endif
 
 
@@ -187,5 +187,12 @@ let g:SrcExpl_prevDefKey = "<F11>"
 let g:SrcExpl_nextDefKey = "<F10>" 
 
 set linespace=6
-set background=dark
-colorscheme PaperColor
+"set background=dark
+"colorscheme PaperColor
+
+
+
+let g:cpp_experimental_template_highlight = 1
+
+let g:cpp_class_scope_highlight = 1
+let c_no_curly_error=1
