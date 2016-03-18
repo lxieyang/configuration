@@ -110,7 +110,8 @@ call togglebg#map("<F5>")
 if has('gui_running')
     set guifont=monospace\ 12
     set background=dark
-    colorscheme solarized
+    "colorscheme solarized
+    colorscheme peaksea
 endif
 
 
