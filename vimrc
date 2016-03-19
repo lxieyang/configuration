@@ -24,7 +24,7 @@ let g:cpp_experimental_template_highlight = 1
  " let Vundle manage Vundle, required
 "Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'VundleVim/Vundle.vim'
-Bundle 'Valloric/YouCompleteMe'
+"Bundle 'Valloric/YouCompleteMe'
 Plugin 'Raimondi/delimitMate'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 "Plugin 'flazz/vim-colorschemes'
@@ -127,15 +127,6 @@ map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 map <leader>n :noh<Enter>
 
 
-"python with virtualenv support
-py << EOF
-import os
-import sys
-if 'VIRTUAL_ENV' in os.environ:
-    project_base_dir = os.environ['VIRTUAL_ENV']
-    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-    execfile(activate_this, dict(__file__=activate_this))
-EOF
 let g:pymode_rope_completion = 0
 let g:pymode_rope_complete_on_dot = 0
 
@@ -203,3 +194,4 @@ let g:cpp_experimental_template_highlight = 1
 
 let g:cpp_class_scope_highlight = 1
 let c_no_curly_error=1
+colorscheme peaksea
