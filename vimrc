@@ -82,6 +82,12 @@ if has('gui_running')
     colorscheme peaksea
 endif
 
+if $SSH_CONNECTION
+    set guifont=monospace\ 12
+    set background=dark
+    colorscheme peaksea
+endif
+
 
 "python:
 let g:ycm_autoclose_preview_window_after_completion=1
