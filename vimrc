@@ -22,7 +22,9 @@ let g:cpp_experimental_template_highlight = 1
  "call vundle#begin('~/some/path/here')
 
  " let Vundle manage Vundle, required
+Plugin 'vim-scripts/oceandeep'
 "Plugin 'NLKNguyen/papercolor-theme'
+Plugin 'terryma/vim-multiple-cursors'
 Plugin 'VundleVim/Vundle.vim'
 Bundle 'Valloric/YouCompleteMe'
 Plugin 'Raimondi/delimitMate'
@@ -42,43 +44,8 @@ Plugin 'vim-scripts/taglist.vim'
 Plugin 'pelodelfuego/vim-swoop'
 Plugin 'wesleyche/SrcExpl'
 
-
-
-
-
-
-
-
- " The following are examples of different formats supported.
- " Keep Plugin commands between vundle#begin/end.
- " plugin on GitHub repo
-" Plugin 'tpope/vim-fugitive'
-" " plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" " Git plugin not hosted on GitHub
-" Plugin 'git://git.wincent.com/command-t.git'
-" " git repos on your local machine (i.e. when working on your own plugin)
-" Plugin 'file:///home/gmarik/path/to/plugin'
-" " The sparkup vim script is in a subdirectory of this repo called vim.
-" " Pass the path to set the runtimepath properly.
-" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" " Avoid a name conflict with L9
-" Plugin 'user/L9', {'name': 'newL9'}
-"
-" " All of your Plugins must be added before the following line
  call vundle#end()            " required
  filetype plugin indent on    " required
-" " To ignore plugin indent changes, instead use:
-" "filetype plugin on
-" "
-" " Brief help
-" " :PluginList       - lists configured plugins
-" " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" " :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-" "
-" " see :h vundle for more details or wiki for FAQ
-" " Put your non-Plugin stuff after this line
 let g:ycm_confirm_extra_conf=0
 
 
@@ -93,14 +60,14 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <space> za
-map <F2> :NERDTreeToggle<Enter>
-map <F3> :TlistToggle<Enter>
-map <F11> :set spell spelllang=en_US<Enter>
-map <F12> <Enter>:cd %:p:h<Enter><F11>
+map <F3> :NERDTreeToggle<Enter>
+map <F2> :TlistToggle<Enter>
+"map <F11> :set spell spelllang=en_US<Enter>
+"map <F12> <Enter>:cd %:p:h<Enter><F11>
 set foldmethod=indent
 set foldlevel=99
 set encoding=utf-8
-set clipboard=unnamed
+"set clipboard=unnamed
 
 let mapleader = ","
 call togglebg#map("<F5>")
@@ -109,6 +76,7 @@ call togglebg#map("<F5>")
 
 if has('gui_running')
     set guifont=monospace\ 12
+    set linespace=6
     set background=dark
     "colorscheme solarized
     colorscheme peaksea
@@ -121,17 +89,6 @@ map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 map <leader>n :noh<Enter>
 
 
-"python with virtualenv support
-py << EOF
-import os
-import sys
-if 'VIRTUAL_ENV' in os.environ:
-    project_base_dir = os.environ['VIRTUAL_ENV']
-    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-    execfile(activate_this, dict(__file__=activate_this))
-EOF
-let g:pymode_rope_completion = 0
-let g:pymode_rope_complete_on_dot = 0
 
 
 "buffer:
@@ -187,9 +144,7 @@ let g:SrcExpl_prevDefKey = "<F11>"
 " // Set "<F8>" key for displaying the next definition in the jump list 
 let g:SrcExpl_nextDefKey = "<F10>" 
 
-set linespace=6
-"set background=dark
-"colorscheme PaperColor
+
 
 
 
@@ -197,3 +152,15 @@ let g:cpp_experimental_template_highlight = 1
 
 let g:cpp_class_scope_highlight = 1
 let c_no_curly_error=1
+"colorscheme peaksea
+
+"quick yanking
+vmap <c-y> "ay
+vmap <C-x> "ax
+map <C-p> "aP
+
+
+let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_prev_key='<C-p>'
+"let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_quit_key='<Esc>'

@@ -24,7 +24,7 @@ commit(){
 }
 discard(){
     git clean -f
-    git reset head --hard
+    git reset HEAD --hard
 }
 
 function compile {
