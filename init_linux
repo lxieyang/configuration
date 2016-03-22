@@ -1,14 +1,2 @@
-sudo apt-get install vim
-sudo apt-get install ctags
-./tmux.sh
 git clone https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-./restore
-vim +PluginInstall
-sudo apt-get -f install
-sudo apt-get install CMake
-sudo apt-get install python2.7-dev 
-cd ~/.vim/bundle/YouCompleteMe
-git submodule --init --recursive
-./install.py --clang-completer
