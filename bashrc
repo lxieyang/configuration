@@ -1,6 +1,5 @@
 # ~/.bashrc ]] && source ~/.bashrc
 
-export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export PATH=/usr/local/bin:$PATH
 export PATH=~/utilities:$PATH
@@ -10,6 +9,7 @@ alias lh='ls -ld .?*'
 alias caen='ssh junlonga@login-course.engin.umich.edu'
 alias cloud='ssh root@104.131.67.203'
 alias update_bash='cd ~/configuration/'
+alias tmux='tmux -2'
 push(){
     git add *
     git add .
