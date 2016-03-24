@@ -95,10 +95,6 @@ map <leader>n :noh<Enter>
 set switchbuf=usetab,newtab
 map ,bt :bufdo tab split<CR>
 
-"NERDTree:
-autocmd VimEnter * wincmd p
-autocmd VimEnter * :TlistToggle
-autocmd BufWritePost *.cpp :TlistUpdate
 
 " // The switch of the Source Explorer 
 nmap <F4> :SrcExplToggle<CR> 
@@ -155,7 +151,7 @@ let c_no_curly_error=1
 "colorscheme peaksea
 
 "quick yanking
-vmap <c-y> "ay
+vmap <C-y> "ay
 vmap <C-x> "ax
 map <C-p> "aP
 
@@ -164,3 +160,5 @@ let g:multi_cursor_next_key='<C-n>'
 let g:multi_cursor_prev_key='<C-p>'
 "let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'
+set t_Co=256
+colorscheme peaksea
