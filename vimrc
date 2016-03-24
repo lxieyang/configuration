@@ -162,3 +162,4 @@ let g:multi_cursor_prev_key='<C-p>'
 let g:multi_cursor_quit_key='<Esc>'
 set t_Co=256
 colorscheme peaksea
+autocmd BufEnter * silent! lcd %:p:h
